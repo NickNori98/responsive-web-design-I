@@ -1,3 +1,291 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+    margin: 5% 10% 5% 10%;
+    max-width: 100%;
+}
+
+.title{
+	font-size:90px;
+    display: flex;
+    justify-content: center;
+    
+	
+}
+.fucked{
+    display: flex;
+    padding-left: 20%;
+    padding-right: 30%;
+}
+
+.navTop{
+	margin:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+	display:flex;
+	padding:3%;
+	font-weight:100;
+	float:left;
+	text-decoration:none ;
+	text-transform:capitalize ;
+	color:grey;
+}
+
+.textOne{
+	display:flex;
+	flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    padding:2%;
+    width: 100%;
+}
+
+.header-img{
+	position: relative;
+	left:35%;
+}
+h1{
+	position: relative;
+	width:5%;
+	margin:5%;
+	padding:2%;
+}
+.Get{
+	font-size:20%;
+	position: relative;
+	left:7%;
+    width:5%;
+    top: 80%;
+	padding-top: 5%;
+}
+.Get:hover{
+color:grey;
+}
+#mid-img{
+    width: 100%;
+}
+.midsection{
+    display: flex;
+    
+    width: 100%
+}
+.boxes{
+    width: 100%;
+    margin: 2%;
+    font-size: 25px;
+
+}
+.features {
+	font-size:25px;
+	padding:1.5%;	
+}
+.about {
+	font-size:25px;
+	padding:1.5%;
+}
+#about, #featured{
+display:flex ;
+flex-direction:row ;
+}
+.logo{
+    padding:2.5% 0% 2.5% 0%;
+    margin-left: 10%;
+}
+.fatbitches{
+    display: flex;
+    
+}
+
+#comtact{
+	font-size:20px;
+}
+.copyright{
+	position: relative;
+	left:12.5%;
+}
+.parent{
+	display:flex;
+    justify-content: center;
+    margin-right: 60%;
+}
+
+@media (max-width: 500px) {
+ 
+    .navTop { 
+     flex-direction: column-reverse;
+     
+    
+ }
+ 
+ nav a{
+    font-size: 20px;
+	flex-direction: column-reverse;
+    width:100%;
+    border-bottom:solid 1px black;
+	
+}
+.header-img{
+	display:none;
+}
+.logo{
+    display: none;
+}
+.title{
+    font-size: 70px;
+    flex-direction: column;
+    height:5%;
+    width: 100%;
+
+}
+.textOne{
+    width: 100%;
+}
+
+.Get{
+    margin-right: 120%;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+}
+.title-div{
+    display: flex;
+    flex-direction: column;
+}
+.midsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+.boxes{
+    width: 100%;
+    margin: 2%;
+    font-size: 25px;
+
+}
+#mid-img{
+    width: 105%
+}
+.copyright{
+    margin-top: 4%;
+    text-align: center;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    
+}
+#get{
+    text-align: center;
+    align-self: center;
+    width: 30%;
+    
+}
+.fatbitches{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.gameover{
+    display: flex;
+    flex-direction: column;
+}
+.oplogo{
+    opacity: 100%;
+    text-align: center;
+}
+}
+@media(max-width: 800px){
+    .logo{
+        opacity: 0%;
+    }
+    .header-img{
+        display: none;
+    }
 
 
+    Nav{
+        width: 100%;
+    }
+    .oplogo{
+        text-align: center;
+    }
+    .fatbitches{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}
